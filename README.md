@@ -40,8 +40,9 @@ Sistema para gestão de locações de uma imobiliária.
 Exemplo: acesse http://localhost:8000 para abrir a página inicial da aplicação, hospedada no servidor Apache.
 
 - Banco de dados (acesso via PHPMyAdmin http://localhost:8080)
-  user: root
-  senha: root
+  | usuario | senha |
+  |---------|-------|
+  | root    | root  |
 
 # [Estrutura do Projeto](#estrutura)
 
