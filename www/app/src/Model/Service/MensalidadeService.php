@@ -39,7 +39,7 @@ class MensalidadeService {
 
             if ($i === 0) {
                 if ($diaInicio > 1) {
-                    $valorMensalidadePrimeiroMes = ($valorMensalidade / 30) * $diaInicio;
+                    $valorMensalidadePrimeiroMes = ($valorMensalidade / 31) * (31 - $diaInicio);
                     $mensalidade->setValorMensalidade($valorMensalidadePrimeiroMes);
                 }
             } else {
