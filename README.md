@@ -69,3 +69,7 @@ Exemplo: acesse http://localhost:8000 para abrir a página inicial da aplicaçã
     ├── .htaccess
     └── index.php
 ```
+
+# [Diagrama de Classes](#diagrama)
+
+![Diagrama](diagrama_de_classes.jpg)
