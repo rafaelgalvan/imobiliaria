@@ -27,6 +27,8 @@ Sistema para gestão de locações de uma imobiliária.
   ```
     (Esse comando irá gerar os arquivos de autoload do projeto)
 
+- Importe para a base de dados o aquivo imobiliaria.sql
+
 # [Para rodar o projeto no browser, use as portas abaixo:](#rodar-no-browser)
 
 | Server     | Port |
