@@ -10,23 +10,24 @@ Sistema para gestão de locações de uma imobiliária.
 - Docker e docker-compose
 - PHP 7.4
 
-# Como rodar o projeto (#rodar-o-projeto)
+# [Como rodar o projeto] (#rodar-o-projeto)
 - Execute os comandos abaixo:
   ```sh
   git clone https://github.com/rafaelgalvan/imobiliaria.git
   ```
     (clone do projeto)
+    
   ```sh
   docker-compose up -d
   ```
     (esse comando irá baixar as imagens utilizadas no projeto, caso seja a primeira vez que seja invocado, e inicializar os containers da aplicação)
-  
+    
   ```sh
   docker run --rm -v $(pwd)/www/app:/app composer update
   ```
     (Esse comando irá gerar os arquivos de autoload do projeto)
 
-# Para rodar o projeto no browser, use as portas abaixo: (#requisitos)
+# [Para rodar o projeto no browser, use as portas abaixo:] (#requisitos)
 
 | Server     | Port |
 |------------|------|
@@ -36,7 +37,7 @@ Sistema para gestão de locações de uma imobiliária.
 
 Exemplo: acesse http://localhost:8000 para abrir a página inicial da aplicação, hospedada no servidor Apache.
 
-# Estrutura do Projeto
+# [Estrutura do Projeto]
 
 ```sh
 .
