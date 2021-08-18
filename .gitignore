@@ -1,0 +1,6 @@
+# Application
+data/
+www/app/vendor
+
+# VSCode
+.vscode/
