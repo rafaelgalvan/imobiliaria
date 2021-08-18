@@ -143,7 +143,7 @@ class LocadorController extends Controller
         $locadorDAO = new LocadorDAO();
 
         if ($totalContratos = $locadorDAO->getQuantidadeContratos($_POST['id'])){
-            Sessao::gravaMensagem("Este locador não pode ser excluído pois existem ".$totalContratos." contratos vinculados a ele.");
+            Sessao::gravaMensagem("Este locador não pode ser excluído pois existe ".$totalContratos." contrato(s) vinculados a ele.");
             $this->redirect('/locador/exclusao/'.$_POST['id']);
         }
 

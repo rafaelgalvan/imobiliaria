@@ -158,7 +158,7 @@ class ImovelController extends Controller
         $imovelDAO = new ImovelDAO();
 
         if ($totalContratos = $imovelDAO->getQuantidadeContratos($_POST['id'])){
-            Sessao::gravaMensagem('Este imóvel não pode ser excluído pois existem ' . $totalContratos . ' contratos vinculados a ele.');
+            Sessao::gravaMensagem('Este imóvel não pode ser excluído pois existe ' . $totalContratos . ' contrato(s) vinculados a ele.');
             $this->redirect('/imovel/exclusao/'.$_POST['id']);
         }
 

@@ -5,12 +5,10 @@
 
             <h3>Excluir Locatário</h3>
 
-            <?php if($Sessao::retornaErro()){ ?>
-                <div class="alert alert-warning" role="alert">
+            <?php if ($Sessao::retornaMensagem()){ ?>
+                <div class="alert alert-<?php echo $Sessao::retornaClasse() ? $Sessao::retornaClasse() : 'warning'; ?>" role="alert">
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <?php foreach($Sessao::retornaErro() as $key => $mensagem){ ?>
-                        <?php echo $mensagem; ?> <br>
-                    <?php } ?>
+                    <?php echo $Sessao::retornaMensagem(); ?>
                 </div>
             <?php } ?>
 
